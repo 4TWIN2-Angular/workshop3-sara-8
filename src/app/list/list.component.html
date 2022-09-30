@@ -1,0 +1,17 @@
+<p>list works!</p>
+
+<input [value]="nb" (keyup)="setNb(ref.value)" #ref >  {{ nb }}
+
+<input [(ngModel)]="nb2" >  {{ nb2 }}
+<table>
+  <tr>
+    <th>idCustomer</th>
+    <th>firstName</th>
+    <th>lastName</th>
+    <th></th>
+  </tr>
+   <tr *ngFor="let User of list">
+  <td>{{ User.idCustomer }}</td>
+  <td> {{User.firstName }}</td>
+  <td>{{ User.lastName }} </td></tr>
+</table>
